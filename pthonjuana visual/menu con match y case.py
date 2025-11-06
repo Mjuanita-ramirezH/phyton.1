@@ -2,11 +2,11 @@ animal = "eagle".capitalize()#paraque salga la primera en mayuscula y el resto e
 #animal = "eagle".lower()
 #animal = "eagle".upper()
 match animal:
-    case "eagle" | "parrot": #si quito del | para delnte solo cpmrara con la primera hasta encontrar la que es igual a la variable
+    case "Eagle" | "parrot": #si quito del | para delnte solo cpmrara con la primera hasta encontrar la que es igual a la variable
         print ("bird")
-    case "lion" | "tiger":
+    case "Lion" | "tiger":
         print ("Mammal")
-    case "python" | "cocodrile":
+    case "Python" | "cocodrile":
         print ("reptile")
     case _: 
         print ("Unknown class")
@@ -14,12 +14,12 @@ match animal:
         
 #Ejemplo menu
 print ("Menu de envios")
-print ("Get")
+print ("get")
 print ("post")
 print ("put")
 print ("delete")
 print ("salir")
-opc = int(input("ingrese opcion")).capitalize()
+opc = int(input("ingrese opcion")).lower()
 match opc:
     case "get": #se puede poner en numero pero con guien bajo 2_3_4 y luego va el | y el resto
         print ("fetching resource...")
